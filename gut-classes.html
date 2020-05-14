@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        header {
+            height: 500px;
+            background-image: url(./img/hero1.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        a.nav-link:hover {
+            border-bottom: solid 1px #f15d44 !important;
+            color: #fff;
+            transition: 0.9s;
+
+        }
+
+        .nav-link {
+            font-weight: 700 !important;
+        }
+
+        .the-nav {
+
+            padding-top: 14px;
+
+        }
+
+        .navcontent {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        .navcontent .option {
+            font-size: 22px
+        }
+
+        .navcontent span {
+            font-size: 14px;
+            color: #f15d44;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .navcontent h1 {
+            font-size: 72px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 11px;
+            margin-bottom: 18px;
+        }
+
+        .navcontent button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .navcontent p {
+            color: #ffffff;
+            margin-bottom: 44px
+        }
+
+        a.navbar-brand span {
+            color:
+        }
+
+
+        nav a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            padding-right: 20px;
+        }
+
+        .nav ul li a:hover {}
+
+        .header-center {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .header-center h3 {
+            line-height: 60px;
+            font-family: 'Courier Prime', monospace;
+        }
+        
+         .register-pic{
+            background-image: url(register-pic.jpg);
+            height: 465px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .the-form{
+            padding-top: 120px;
+            padding-bottom: 55px;
+            background: #fdfdfd
+        }
+        .the-form form{
+            padding-top: 10px;
+            padding-left: 10px
+        }
+        .form-title{
+            text-align: center;
+                padding-top: 18px;
+    padding-left: 7px;
+        }
+        .form-title h3{
+                font-size: 16px;
+    font-family: poppins,sans-serif;
+    color: #6b6b6b;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px;
+        }
+        .form-title h1{
+            padding-bottom: 5px
+        }
+        .the-form input {
+            width: 100%;
+            height: 46px;
+            border: 1px solid #ebebeb;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #9b9b9b;
+            margin-bottom: 18px;
+        }
+        .the-form label{
+            font-size: 14px;
+    color: #9b9b9b;
+    margin-bottom: 11px;
+        }
+        .the-form button{
+                font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    background: -webkit-gradient(linear,left top,right top,from(#eb3c5a),to(#f67831));
+    background: -o-linear-gradient(left,#eb3c5a,#f67831);
+    background: linear-gradient(to right,#eb3c5a,#f67831);
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    margin-top: 30px;
+        }
+        .form title{
+                color: #111;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+        }
+        
+        
+          .classes-slider.owl-carousel .owl-dots button {
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            background: #ebebeb;
+            border-radius: 50%;
+            margin-right: 10px;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .owl-dots {
+            text-align: center;
+        }
+
+        section.classes-section {
+            padding-top: 90px;
+            padding-bottom: 40px
+        }
+
+        .section-title h2 {
+            text-align: center;
+            color: #111;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+
+        .classes-slider.owl-carousel .owl-dots button.owl-dot.active {
+            width: 42px;
+            border-radius: 50px;
+            background: #f67831;
+        }
+
+        .classes-slider.owl-carousel .owl-dots button:last-child {
+            margin-right: 0;
+        }
+
+        .classes-slider .col-lg-4 {
+            max-width: 100%;
+        }
+
+        .single-class-item {
+            height: 255px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .single-class-item .si-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .single-class-item .si-text h4 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .single-class-item .si-text span {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .single-class-item .si-text span i {
+            color: #e85d39;
+            margin-right: 4px;
+        }
+
+        .classes-timetable {
+	padding-top: 0;
+            padding-bottom: 65px;
+}
+.classes-timetable .nav-controls {
+	text-align: center;
+	margin-bottom: 42px;
+}
+.classes-timetable .nav-controls ul li {
+	list-style: none;
+	font-size: 16px;
+	color: #111111;
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 48px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.classes-timetable .nav-controls ul li.active {
+	color: #f15d44;
+}
+.classes-timetable .nav-controls ul li:hover {
+	color: #f15d44;
+}
+.classes-timetable .nav-controls ul li:last-child {
+	margin-right: 0;
+}
+.schedule-table.filtering .ts-item {
+	opacity: 0;
+}
+.schedule-table.filtering .ts-item.show {
+	opacity: 1;
+}
+.schedule-table table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+}
+.schedule-table table thead tr th {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 25px 0;
+	background: #f0f0f0;
+}
+.schedule-table table tbody tr {
+	border-top: 1px solid #e5e5e5;
+}
+.schedule-table table tbody tr td {
+	width: 146px;
+	background: #ffffff;
+	border-right: 1px solid #e5e5e5;
+	padding: 18px 0;
+	position: relative;
+	z-index: 1;
+}
+.schedule-table table tbody tr td.ts-item {
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.schedule-table table tbody tr td:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+	background: -o-linear-gradient(left, #eb3c5a, #f67831);
+	background: linear-gradient(to right, #eb3c5a, #f67831);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.schedule-table table tbody tr td.hover-bg:hover h6 {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover span {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover .trainer-name {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover:after {
+	opacity: 1;
+}
+.schedule-table table tbody tr td.workout-time {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.schedule-table table tbody tr td h6 {
+	font-weight: 600;
+	color: #f15d44;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.schedule-table table tbody tr td span {
+	font-size: 14px;
+	font-weight: 600;
+	color: #111111;
+}
+.schedule-table table tbody tr td .trainer-name {
+	font-size: 14px;
+	color: #6b6b6b;
+}
+        
+           footer{
+            background-color: #1e1e1e
+        }
+        footer ul li{
+            list-style: none;
+            color:#ada8a8
+        }
+        footer h2{
+            padding-bottom: 15px;
+            color: #f15d44;
+
+        }
+        footer button{
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+    width: 82px;
+    height: 30px;
+    border: none;
+    color: white;
+    margin-top: 28px;
+    font-size: 17px;
+    font-weight: 400;
+        }
+        .copyright-text{
+            text-align: center;
+            padding-top: 15px;
+            color: #ada8a8;
+            padding-bottom: 20px
+        }
+        .social2 {
+            padding-top: 15px
+        }
+         .social2 a{
+            
+            font-size: 16px;
+    color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background: #303030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+             background: none;
+        }
+        
+    </style>
+    </head>
+    
+    <body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  ">
+                <a class="navbar-brand" href="#"><img src="./img/logo1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff"></i> </span>
+                </button>
+
+                <div class="collapse navbar-collapse the-nav" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Classes <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gut-gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./gut-contact.html" tabindex="-1" aria-disabled="true">Contacts</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-user-plus" style="
+    padding-top: 14px;
+"></i>Register</a> </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <hr>
+
+
+
+            <div class="navcontent">
+
+                <h1>CLASSES</h1>
+                <div class="option">
+                    <a>
+
+                        <i class="fa fa-home"></i>
+                        Home >
+                    </a>
+                    <span>CLASSES</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+        
+        
+        
+          <section class="the-form">
+
+        <div class="container">
+
+            <div class="row" style="background: #fff;-webkit-box-shadow: 0 12px 21px rgba(0,0,0,.15);
+    box-shadow: 0 12px 21px rgba(0,0,0,.15);">
+                <div class="col-sm-8">
+                    <div class="form-title">
+                        <h1>Register Now</h1>
+                        <h3>The First 7 Day Trial Is Completely Free With The Teacher</h3>
+                    </div>
+                    <form>
+                        <div class="row">
+
+                            <div class="col-sm-6"> <label for="name">First Name</label> <input type="text" id="name"></div>
+                            <div class="col-sm-6"> <label for="email">E-Mail</label> <input type="email" id="email"></div>
+                            <div class="col-sm-6"> <label for="name2">Last Name</label> <input type="text" id="name2"></div>
+                            <div class="col-sm-6"> <label for="number">Number</label> <input type="text" id="number"></div>
+
+
+
+                        </div>
+<button type="submit">Register Now</button>
+                    </form>
+                </div>
+                <div class="col-sm-4" style=" background-image: url(./img/register-pic.jpg);
+            height: 465px;
+            background-position: center;
+            background-size: cover;">
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+        
+        
+        
+        <section class="classes-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>UNLIMITED CLASSES</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row classes-slider owl-carousel">
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-1.jpg" style="background-image: url(./img/classes-1.jpg)">
+                        <div class="si-text">
+                            <h4>Yoga</h4>
+                            <span><i class="fa fa-user"></i> Ryan Knight</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-4.jpg" style="background-image: url(./img/classes-4.jpg)">
+                        <div class="si-text">
+                            <h4>Karate</h4>
+                            <span><i class="fa fa-user"></i> Kevin McCormick</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-2.jpg" style="background-image: url(./img/classes-2.jpg)">
+                        <div class="si-text">
+                            <h4>Running</h4>
+                            <span><i class="fa fa-user"></i> Randy Rivera</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-5.jpg" style="background-image: url(./img/classes-5.jpg)">
+                        <div class="si-text">
+                            <h4>Dance</h4>
+                            <span><i class="fa fa-user"></i> Russell Lane</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-3.jpg" style="background-image: url(./img/classes-3.jpg)">
+                        <div class="si-text">
+                            <h4>Personal Training</h4>
+                            <span><i class="fa fa-user"></i> Cole Robertson</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-6.jpg" style="background-image: url(./img/classes-6.jpg)">
+                        <div class="si-text">
+                            <h4>Weight Loss</h4>
+                            <span><i class="fa fa-user"></i> Ryan Scott</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-7.jpg" style="background-image: url(./img/classes-7.jpg)">
+                        <div class="si-text">
+                            <h4>Personal Training</h4>
+                            <span><i class="fa fa-user"></i> Cole Robertson</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-8.jpg" style="background-image: url(./img/classes-8.jpg)">
+                        <div class="si-text">
+                            <h4>Weight Loss</h4>
+                            <span><i class="fa fa-user"></i> Ryan Scott</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+    </section>
+        
+        
+        <section class="classes-timetable spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Class Timetable</h2>
+                    </div>
+                    <div class="nav-controls">
+                        <ul>
+                            <li class="active" data-tsfilter="all">All Class</li>
+                            <li data-tsfilter="gym">Gym</li>
+                            <li data-tsfilter="crossfit">Crossfit</li>
+                            <li data-tsfilter="cardio">Cardio</li>
+                            <li data-tsfilter="body">Body</li>
+                            <li data-tsfilter="yoga">Yoga</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="schedule-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Saturday</th>
+                                    <th>Sunday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="workout-time">10.00</td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Gym</h6>
+                                        <span>10.00 - 11.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="yoga">
+                                        <h6>Yoga</h6>
+                                        <span>10.00 - 12.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="body">
+                                        <h6>Body</h6>
+                                        <span>10.00 - 12.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Cardio</h6>
+                                        <span>10.00 - 11.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">14.00</td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item">
+                                        <h6>Running</h6>
+                                        <span>14.00 - 16.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item">
+                                        <h6>Box</h6>
+                                        <span>14.00 - 15.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Gym</h6>
+                                        <span>14.00 - 16.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">16.00</td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Cardio</h6>
+                                        <span>16.00 - 18.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Gym</h6>
+                                        <span>16.00 - 19.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="yoga">
+                                        <h6>Yoga</h6>
+                                        <span>16.00 - 18.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Gym</h6>
+                                        <span>16.00 - 20.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">18.00</td>
+                                    <td class="hover-bg ts-item">
+                                        <h6>Box</h6>
+                                        <span>18.00 - 22.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td class="hover-bg ts-item" data-tsmeta="body">
+                                        <h6>Body</h6>
+                                        <span>18.00 - 20.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                        <h6>Crossfit</h6>
+                                        <span>18.00 - 21.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Cardio</h6>
+                                        <span>18.00 - 22.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">20.00</td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Gym</h6>
+                                        <span>20.00 - 12.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td class="hover-bg ts-item" data-tsmeta="body">
+                                        <h6>Body</h6>
+                                        <span>20.00 - 21.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Cardio</h6>
+                                        <span>20.00 - 22.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                        <h6>Crossfit</h6>
+                                        <span>20.00 - 21.00</span>
+                                        <div class="trainer-name">
+                                            John Smith
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        
+        
+        
+        
+         <footer>
+    
+    <div class="container">
+        
+        
+        <div class="row" style="padding-top: 45px">
+        
+        
+        <div class="col-sm-3"> <h2>Contact</h2>  <ul>
+            <li> Street 2020 Human Drive</li>
+            <li> City Cairo</li>
+            <li> State ElZamalek</li>
+            <li> Zip Code:21201</li>
+            <li> Phone Number:3737-475-7475</li>
+            <li> Mobile Number:440-35345-26356</li>
+            </ul></div>
+       <div class="col-sm-3"> <h2>MENU</h2> <ul>
+           <li>Home</li>
+            <li> Book</li>
+            <li> About</li>
+            <li> Courses</li>
+            <li> Our Blog</li>
+            <li> Pricing</li>
+           
+           </ul></div>
+        
+        <div class="col-sm-3"><h2>Recent Posts</h2>
+            <ul>
+            <li>Breaking Down Barries</li>
+                <li> A World of Opportunites</li>
+                <li> A Celebrates</li>
+            </ul>
+            </div>
+        
+        <div class="col-sm-3">
+            <h2>NEWSLETTERS</h2>
+            <input type="text" placeholder=" Your Email Address"> <button>Sign Up</button>
+            <div class="social2">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        
+        
+        </div>
+        <hr>
+        <div class="copyright-text"><p>
+Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Joo</a>
+</p></div>
+        
+        </div>
+    
+    
+    
+    
+    </footer>
+
+        
+        
+        
+        
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="jquery.magnific-popup.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(".video-popup").magnificPopup({
+            type: 'iframe',
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/watch?v=SlPhMPnQ58k' // URL that will be set as a source for iframe.
+                    },
+                    vimeo: {
+                        index: 'vimeo.com/',
+                        id: '/',
+                        src: '//player.vimeo.com/video/%id%?autoplay=1'
+                    },
+                    gmaps: {
+                        index: '//maps.google.',
+                        src: '%id%&output=embed'
+                    }
+
+                    // you may add here more sources
+                    
+
+                },
+
+                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+            }
+        });
+    })
+
+
+    $(".classes-slider").owlCarousel({
+        items: 3,
+        dots: true,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 3,
+            }
+        }
+    });
+    
+    
+     $('.nav-controls ul li').on('click', function() {
+        var tsfilter = $(this).data('tsfilter');
+        $('.nav-controls ul li').removeClass('active');
+        $(this).addClass('active');
+        
+        if(tsfilter == 'all') {
+            $('.schedule-table').removeClass('filtering');
+            $('.ts-item').removeClass('show');
+        } else {
+            $('.schedule-table').addClass('filtering');
+        }
+        $('.ts-item').each(function(){
+            $(this).removeClass('show');
+            if($(this).data('tsmeta') == tsfilter) {
+                $(this).addClass('show');
+            }
+        });
+    });
+
+</script> 
+    </body>
+    
+    
+</html>

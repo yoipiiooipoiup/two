@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        header {
+            height: 790px;
+            background-image: url(./img/hero1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        a.nav-link:hover {
+            border-bottom: solid 1px #f15d44 !important;
+            color: #fff;
+            transition: 0.9s;
+            
+        }
+        .nav-link{
+            font-weight: 700 !important;
+        }
+
+        .the-nav {
+
+            padding-top: 14px;
+
+        }
+
+        .navcontent {
+            padding-top: 15%;
+        }
+
+        .navcontent span {
+            font-size: 14px;
+            color: #f15d44;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .navcontent h1 {
+            font-size: 72px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 11px;
+            margin-bottom: 18px;
+        }
+
+        .navcontent button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .navcontent p {
+            color: #ffffff;
+            margin-bottom: 44px
+        }
+
+        a.navbar-brand span {
+            color:
+        }
+
+
+        nav a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            padding-right: 20px;
+        }
+
+        .nav ul li a:hover {}
+
+        .header-center {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .header-center h3 {
+            line-height: 60px;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .story {
+            padding-top: 65px
+        }
+
+        .story-about h1 {
+            padding-bottom: 20px
+        }
+
+        .story-about button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            margin-top: 28px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        about-pic {
+            position: ;
+        }
+
+        .about-pic img {
+            width: 100%;
+        }
+
+        .about-pic .play-btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-41.5px, -41.5px);
+            -ms-transform: translate(-41.5px, -41.5px);
+            transform: translate(-41.5px, -41.5px);
+        }
+
+        .service-item {
+            padding-bottom: 20px;
+            padding-top: 70px;
+            padding-left: 15px
+        }
+
+        .service-item h1 {
+            font-size: 22px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 20px
+        }
+
+        .service-item p {
+            color: #a9abab;
+        }
+
+        .no-gutters {
+            height: 255px;
+            position: relative;
+            margin-bottom: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+
+        des {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .4);
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .classes-slider.owl-carousel .owl-dots button {
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            background: #ebebeb;
+            border-radius: 50%;
+            margin-right: 10px;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .owl-dots {
+            text-align: center;
+        }
+
+        section.classes-section {
+            padding-top: 90px;
+            padding-bottom: 40px
+        }
+
+        .section-title h2 {
+            text-align: center;
+            color: #111;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+
+        .classes-slider.owl-carousel .owl-dots button.owl-dot.active {
+            width: 42px;
+            border-radius: 50px;
+            background: #f67831;
+        }
+
+        .classes-slider.owl-carousel .owl-dots button:last-child {
+            margin-right: 0;
+        }
+
+        .classes-slider .col-lg-4 {
+            max-width: 100%;
+        }
+
+        .single-class-item {
+            height: 255px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .single-class-item .si-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .single-class-item .si-text h4 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .single-class-item .si-text span {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .single-class-item .si-text span i {
+            color: #e85d39;
+            margin-right: 4px;
+        }
+
+        .card {
+            position: relative;
+        }
+
+        .card .face {
+            width: 200px;
+            height: 100px;
+            transition: .5s;
+        }
+
+        .card .face.face1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+            padding-top: 88%;
+            padding-left: 30px;
+        }
+
+        .card .face.face1 .content {
+            position: absolute;
+            left: 50%;
+            bottom: -55px;
+            width: 310px;
+            text-align: center;
+            margin: 0 auto;
+            background: #fff;
+            padding-left: 116px;
+            transition: .5s;
+        }
+
+        .card .face.face1 .content h3 {}
+
+        .card .face.face2 .content {
+            opacity: 0;
+
+            transition: .5s;
+        }
+
+        .card .face.face2 .content p {
+            width: 372px
+        }
+
+        .card:hover .face.face1 {
+            transform: translateY(0);
+        }
+
+        .card:hover .face.face1 .content {}
+
+        .card .face.face1 .content img {}
+
+        .card .face.face2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            align-items: center;
+            box-sizing: border-box;
+            transform: translateY(-100px);
+        }
+
+        .card:hover .face.face2 {
+            transform: translateY(0);
+
+        }
+
+        .card:hover .face.face2 .content {
+            background-color: #fff;
+            opacity: 1;
+        }
+
+        .testmon {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        .testmon img {
+
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .testmon p {
+            font-size: 22px;
+            color: #111;
+            line-height: 30px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .testmon h1 {
+            text-align: center;
+            font-size: 42px;
+            padding-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .theimg {
+            padding-left: 44%;
+            padding-top: 65px
+        }
+
+        a.carousel-control-prev {}
+
+        .banner-text {
+            padding-top: 195px;
+        }
+
+        .banner-text h1 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .banner-text p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        .banner-text button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 166px;
+            height: 42px;
+            border: none;
+            color: white;
+            margin-top: 28px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .prices h1 {
+            text-align: center;
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            padding-bottom: 10px;
+            color: #fff
+        }
+
+        .prices .title:after {
+            position: absolute;
+            left: 50%;
+            bottom: 408px;
+            width: 30px;
+            height: 15px;
+            -webkit-transform: translateX(-15px);
+            -ms-transform: translateX(-15px);
+            transform: translateX(-15px);
+            -webkit-clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
+            clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
+            background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+            background: -o-linear-gradient(left, #eb3c5a, #f67831);
+            background: linear-gradient(to right, #eb3c5a, #f67831);
+            content: "";
+        }
+
+        .fet {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .fet span {
+            font-size: 16px;
+            font-family: poppins, sans-serif;
+            color: #6b6b6b;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 15px;
+        }
+
+        .fet h3 {
+            font-size: 18px;
+            color: #111;
+            font-weight: 600;
+            padding-bottom: 9px
+        }
+
+        .memp {
+            text-align: center;
+            padding-top: 46px;
+            padding-bottom: 40px
+        }
+
+        .membership-item {
+            text-align: center;
+            background: #fff;
+            -webkit-box-shadow: 0 15px 49px rgba(0, 0, 0, .15);
+            box-shadow: 0 15px 49px rgba(0, 0, 0, .15);
+            padding-bottom: 50px;
+        }
+
+        .the-effect:hover {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+
+            border: none;
+            color: white;
+
+            font-size: 19px;
+            font-weight: 500;
+            transition: .9s;
+        }
+
+        .the-effect {
+            width: 150px;
+            height: 40px;
+            background: none;
+            border: 2px solid #f15d44;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        .the-form{
+            padding-top: 120px;
+            padding-bottom: 55px;
+            background: #efefef
+        }
+        .the-form form{
+            padding-top: 10px;
+            padding-left: 10px
+        }
+        .form-title{
+            text-align: center;
+                padding-top: 18px;
+    padding-left: 7px;
+        }
+        .form-title h3{
+                font-size: 16px;
+    font-family: poppins,sans-serif;
+    color: #6b6b6b;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px;
+        }
+        .form-title h1{
+            padding-bottom: 5px
+        }
+        .the-form input {
+            width: 100%;
+            height: 46px;
+            border: 1px solid #ebebeb;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #9b9b9b;
+            margin-bottom: 18px;
+        }
+        .the-form label{
+            font-size: 14px;
+    color: #9b9b9b;
+    margin-bottom: 11px;
+        }
+        .the-form button{
+                font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    background: -webkit-gradient(linear,left top,right top,from(#eb3c5a),to(#f67831));
+    background: -o-linear-gradient(left,#eb3c5a,#f67831);
+    background: linear-gradient(to right,#eb3c5a,#f67831);
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    margin-top: 30px;
+        }
+        .form title{
+                color: #111;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+        }
+        .blog-item img{
+            padding-bottom: 30px;
+        }
+        .date-blog{
+            padding-bottom: 20px
+        }
+        .blog-title{
+                padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+        }
+        .blog-item  h4 a{
+            font-size: 26px;
+    color: #000 !important;
+    text-decoration: none;
+        }
+        .blog-item .date-blog a{
+                font-size: 17px;
+    color: #f15d44;
+            padding-left: 8px;
+        }
+        footer{
+            background-color: #1e1e1e
+        }
+        footer ul li{
+            list-style: none;
+            color:#ada8a8
+        }
+        footer h2{
+            padding-bottom: 15px;
+            color: #f15d44;
+
+        }
+        footer button{
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+    width: 82px;
+    height: 30px;
+    border: none;
+    color: white;
+    margin-top: 28px;
+    font-size: 17px;
+    font-weight: 400;
+        }
+        .copyright-text{
+            text-align: center;
+            padding-top: 15px;
+            color: #ada8a8;
+            padding-bottom: 20px
+        }
+        .social2 {
+            padding-top: 15px
+        }
+         .social2 a{
+            
+            font-size: 16px;
+    color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background: #303030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+             background: none;
+        }
+        .social a i{padding-right: 15px;
+            color: #000 !important;
+            text-align: center;
+            font-size: 27px
+        }
+        
+        .social {
+            padding-top: 15px
+        }
+         .social a{
+            
+            font-size: 16px;
+    color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background: #303030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+             background: none;
+        }
+        .social2 a i{padding-right: 15px;
+            color: #fff !important;
+            text-align: center;
+            font-size: 27px
+        }
+             .featured {
+	padding-top: 80px;
+	padding-bottom: 40px;
+               background: #222;
+    padding-bottom: 80px;
+}
+
+.featured__controls {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.featured__controls ul li {
+	list-style: none;
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	margin-right: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+.featured__controls ul li.active:after {
+	opacity: 1;
+}
+
+.featured__controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #e32879;
+	content: "";
+	opacity: 0;
+}
+
+.featured__controls ul li:last-child {
+	margin-right: 0;
+}
+
+.featured__item {
+	margin-bottom: 50px;
+}
+
+.featured__item:hover .featured__item__pic .featured__item__pic__hover {
+	bottom: 20px;
+}
+
+.featured__item__pic {
+	height: 359px;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+}
+
+.featured__item__pic__hover {
+position: absolute;
+    left: 22px;
+    padding-right: 26px;
+    text-align: center;
+    margin-left: 18px;
+    bottom: -235px;
+    width: 84%;
+    text-align: center;
+    background: #fff;
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -ms-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.featured__item__pic__hover li:last-child {
+	margin-right: 0;
+}
+
+.featured__item__pic__hover li:hover a {
+	background: #e32879;
+	border-color: #e32879;
+}
+
+.featured__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
+.featured__item__pic__hover li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	background: #ffffff;
+	display: block;
+	border-radius: 50%;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.featured__item__text {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.featured__item__text h6 {
+	margin-bottom: 10px;
+}
+
+.featured__item__text h6 a {
+	color: #fff;
+}
+
+.featured__item__text h5 {
+	color: #fff;
+	font-weight: 700;
+}
+        
+        .featured__item__pic__hover{
+            border: 4px solid #e0e0e0;
+        }
+        .featured__item__pic__hover h1{
+            color: #757575
+        }
+        
+       .featured__item__pic__hover p {
+                color: #7d7979;
+        }
+        .featured__item__pic__hover .social a i {
+                color: #7d7979 !important;
+        }
+        .section-title{
+            text-align: center;
+            color: #fff
+        }
+        .featured {
+            background: #222;
+    padding-bottom: 80px;
+        }
+           .social{
+            padding-top: 15px
+        }
+         .social a{
+            
+        display: inline-block;
+    font-size: 16px;
+    color: #000 !important;
+    width: 41px;
+    height: 41px;
+    
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+        }
+        .social a i{
+            color: white;
+            text-align: center;
+        }
+        .register-pic{
+            background-image: url(./img/register-pic.jpg);
+            height: 465px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  ">
+                <a class="navbar-brand" href="#"><img src="./img/logo1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: #fff"></i> </span>
+                </button>
+
+                <div class="collapse navbar-collapse the-nav" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-classes.html">Classes <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gut-gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./gut-contact.html" tabindex="-1" aria-disabled="true">Contacts</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-user-plus" style="
+    padding-top: 14px;
+"></i>Register</a> </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <hr>
+
+
+
+            <div class="navcontent">
+                <span>Fitness Elements</span>
+                <h1>BMI CALCULATOR</h1>
+                <p>Gutim comes packed with the user-friendly BMI Calculator<br> shortcode which lets</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="container">
+        <div class=" story">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="about-pic">
+                        <img src="./img/about-pic.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                            <img src="./img/play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 story-about">
+                    <h1> STORY ABOUT US</h1>
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                        rhoncus, gravida quam semper libero sit amet.</p> <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="overflow: hidden;padding-top: 80PX;">
+        <div class="row">
+            <div class="col-sm-6" style="background-image: url(./img/service-pic.jpg)"></div>
+            <div class="col-sm-6">
+
+                <div class="service-items">
+                    <div class="row">
+                        <div class="col-sm-6" style="background: #1e1e1e">
+                            <div class="service-item"><img src="./img/service-icon-1.png">
+                                <h1>Strategies</h1>
+
+                                <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                    montes.</p>
+                            </div>
+                            <div class="service-item"><img src="./img/service-icon-2.png">
+                                <h1>Yoga</h1>
+
+                                <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                    montes.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6" style="background-color: #141414">
+                            <div class="service-item"><img src="./img/service-icon-3.png">
+                                <h1>Workout</h1>
+
+                                <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                    montes.</p>
+                            </div>
+                            <div class="service-item"><img src="./img/service-icon-4.png">
+                                <h1>Weight Loss</h1>
+
+                                <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                    montes.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="classes-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>UNLIMITED CLASSES</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row classes-slider owl-carousel">
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-1.jpg" style="background-image: url(./img/classes-1.jpg)">
+                        <div class="si-text">
+                            <h4>Yoga</h4>
+                            <span><i class="fa fa-user"></i> Ryan Knight</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-4.jpg" style="background-image: url(./img/classes-4.jpg)">
+                        <div class="si-text">
+                            <h4>Karate</h4>
+                            <span><i class="fa fa-user"></i> Kevin McCormick</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-2.jpg" style="background-image: url(./img/classes-2.jpg)">
+                        <div class="si-text">
+                            <h4>Running</h4>
+                            <span><i class="fa fa-user"></i> Randy Rivera</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-5.jpg" style="background-image: url(./img/classes-5.jpg)">
+                        <div class="si-text">
+                            <h4>Dance</h4>
+                            <span><i class="fa fa-user"></i> Russell Lane</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-3.jpg" style="background-image: url(./img/classes-3.jpg)">
+                        <div class="si-text">
+                            <h4>Personal Training</h4>
+                            <span><i class="fa fa-user"></i> Cole Robertson</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-6.jpg" style="background-image: url(./img/classes-6.jpg)">
+                        <div class="si-text">
+                            <h4>Weight Loss</h4>
+                            <span><i class="fa fa-user"></i> Ryan Scott</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-7.jpg" style="background-image: url(./img/classes-7.jpg)">
+                        <div class="si-text">
+                            <h4>Personal Training</h4>
+                            <span><i class="fa fa-user"></i> Cole Robertson</span>
+                        </div>
+                    </div>
+                    <div class="single-class-item set-bg" data-setbg="./img/classes-8.jpg" style="background-image: url(./img/classes-8.jpg)">
+                        <div class="si-text">
+                            <h4>Weight Loss</h4>
+                            <span><i class="fa fa-user"></i> Ryan Scott</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+    </section>
+
+
+    <section style="background: #f5f5f5;padding-top: 50px">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-4 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/feature-1.jpg" style="background-image: url(./img/trainer-3.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                            <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                 <div class="social">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+              <div class="col-lg-4 oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/feature-1.jpg" style="background-image: url(./img/trainer-2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                              <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                 <div class="social">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            <div class="col-lg-4 oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/feature-1.jpg" style="background-image: url(./img/trainer-1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                              <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                 <div class="social">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="testmon">
+        <div class="container">
+            <h1>SUCCESS STORIES</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="d-block w-100" src="./img/testtest.jpg" alt="First slide">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="theimg"> <img src="./img/testtest.jpg"> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="Second slide">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            <div class="theimg"> <img src="./img/testtest.jpg"> </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" src="..." alt="Third slide">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="theimg"> <img src="./img/testtest.jpg"> </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"> <i class="fa fa-angle-right" style="
+"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section style="background-image: url(./img/banner-bg.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;margin-top: 65px">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-7">
+                    <div class="banner-text">
+                        <h1>GET TRAINING TODAY</h1>
+                        <p>Gimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry’s standard.</p> <button>Contact Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-5"> <img src="./img/banner-person.png" style="max-width: 100%;
+
+    vertical-align: middle;
+    border-style: none;
+"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section style="padding-bottom: 77px">
+
+
+        <div class="container">
+
+            <div class="memp">
+                <h1>MEMBERSHIP PLANS</h1>
+            </div>
+            <div class="row prices">
+
+
+                <div class="col-sm-4">
+                    <div class="membership-item">
+                        <div class="title">
+                            <h1>Basic</h1>
+                            <div class="triangle"></div>
+                        </div>
+
+                        <div class="fet">
+                            <h3><span style="color: #f15d44;font-size: 40px;
+    color: #f15d44;
+    font-weight: 600;
+    margin-bottom: 24px">$17</span>/01 mo </h3>
+                            <span>Duration</span>
+                            <h3>12 months</h3>
+                            <span>personal trainer</span>
+                            <h3>00 person</h3>
+                            <span>Amount of people</span>
+                            <h3>01 person</h3>
+                            <span>Number of visits</span>
+                            <h3>Unlimited</h3>
+                            <button class="the-effect">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="membership-item">
+                        <div class="title">
+                            <h1>Basic</h1>
+                            <div class="triangle"></div>
+                        </div>
+
+                        <div class="fet">
+                            <h3><span style="color: #f15d44;font-size: 40px;
+    color: #f15d44;
+    font-weight: 600;
+    margin-bottom: 24px">$17</span>/01 mo </h3>
+                            <span>Duration</span>
+                            <h3>12 months</h3>
+                            <span>personal trainer</span>
+                            <h3>00 person</h3>
+                            <span>Amount of people</span>
+                            <h3>01 person</h3>
+                            <span>Number of visits</span>
+                            <h3>Unlimited</h3>
+                            <button class="the-effect">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="membership-item">
+                        <div class="title">
+                            <h1>Basic</h1>
+                            <div class="triangle"></div>
+                        </div>
+
+                        <div class="fet">
+                            <h3><span style="color: #f15d44;font-size: 40px;
+    color: #f15d44;
+    font-weight: 600;
+    margin-bottom: 24px">$17</span>/01 mo </h3>
+                            <span>Duration</span>
+                            <h3>12 months</h3>
+                            <span>personal trainer</span>
+                            <h3>00 person</h3>
+                            <span>Amount of people</span>
+                            <h3>01 person</h3>
+                            <span>Number of visits</span>
+                            <h3>Unlimited</h3>
+                            <button class="the-effect">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="the-form">
+
+        <div class="container">
+
+            <div class="row" style="background: #fff">
+                <div class="col-sm-8">
+                    <div class="form-title">
+                        <h1>Register Now</h1>
+                        <h3>The First 7 Day Trial Is Completely Free With The Teacher</h3>
+                    </div>
+                    <form>
+                        <div class="row">
+
+                            <div class="col-sm-6"> <label for="name">First Name</label> <input type="text" id="name"></div>
+                            <div class="col-sm-6"> <label for="email">E-Mail</label> <input type="email" id="email"></div>
+                            <div class="col-sm-6"> <label for="name2">Last Name</label> <input type="text" id="name2"></div>
+                            <div class="col-sm-6"> <label for="number">Number</label> <input type="text" id="number"></div>
+
+
+
+                        </div>
+<button type="submit">Register Now</button>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <div class="register-pic"> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<section>
+    
+    <div class="container">
+    <div class="blog-title">
+        
+        <h1>LATEST BLOG</h1>
+        
+        </div>
+    
+    <div class="row" style="padding-bottom: 100px">
+        
+        
+        <div class="col-sm-4"> <div class="blog-item">
+            <img src="./img/blog-1%20(2).jpg">
+            <div class="blog-tag"> <div class="date-blog">February17,2019  <a href="">#gym</a></div> </div>
+            <h4><a href="#">10 States At Risk of Rural Hospital Closures</a></h4>
+            </div></div>
+          
+        <div class="col-sm-4"> <div class="blog-item">
+            <img src="./img/blog-2%20(2).jpg">
+            <div class="blog-tag"> <div class="date-blog">February17,2019  <a href="">#gym</a></div> </div>
+            <h4><a href="#">10 States At Risk of Rural Hospital Closures</a></h4>
+            </div></div>
+        
+        <div class="col-sm-4"> <div class="blog-item">
+            <img src="./img/blog-333.jpg">
+            <div class="blog-tag"> <div class="date-blog">February17,2019  <a href="">#gym</a></div> </div>
+            <h4><a href="#">10 States At Risk of Rural Hospital Closures</a></h4>
+            </div></div>
+        
+        </div>
+    
+    
+    </div>
+    
+    
+    
+    </section>
+    
+    
+    <footer>
+    
+    <div class="container">
+        
+        
+        <div class="row" style="padding-top: 45px">
+        
+        
+        <div class="col-sm-3"> <h2>Contact</h2>  <ul>
+            <li> Street 2020 Human Drive</li>
+            <li> City Cairo</li>
+            <li> State ElZamalek</li>
+            <li> Zip Code:21201</li>
+            <li> Phone Number:3737-475-7475</li>
+            <li> Mobile Number:440-35345-26356</li>
+            </ul></div>
+       <div class="col-sm-3"> <h2>MENU</h2> <ul>
+           <li>Home</li>
+            <li> Book</li>
+            <li> About</li>
+            <li> Courses</li>
+            <li> Our Blog</li>
+            <li> Pricing</li>
+           
+           </ul></div>
+        
+        <div class="col-sm-3"><h2>Recent Posts</h2>
+            <ul>
+            <li>Breaking Down Barries</li>
+                <li> A World of Opportunites</li>
+                <li> A Celebrates</li>
+            </ul>
+            </div>
+        
+        <div class="col-sm-3">
+            <h2>NEWSLETTERS</h2>
+            <input type="text" placeholder=" Your Email Address"> <button>Sign Up</button>
+            <div class="social2">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        
+        
+        </div>
+        <hr>
+        <div class="copyright-text"><p>
+Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script>2020 All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Joo</a>
+</p></div>
+        
+        </div>
+    
+    
+    
+    
+    </footer>
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="jquery.magnific-popup.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(".video-popup").magnificPopup({
+            type: 'iframe',
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: 'https://www.youtube.com/watch?v=SlPhMPnQ58k' // URL that will be set as a source for iframe.
+                    },
+                    vimeo: {
+                        index: 'vimeo.com/',
+                        id: '/',
+                        src: '//player.vimeo.com/video/%id%?autoplay=1'
+                    },
+                    gmaps: {
+                        index: '//maps.google.',
+                        src: '%id%&output=embed'
+                    }
+
+                    // you may add here more sources
+                    
+
+                },
+
+                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+            }
+        });
+    })
+
+
+    $(".classes-slider").owlCarousel({
+        items: 3,
+        dots: true,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 3,
+            }
+        }
+    });
+
+</script>
+
+</html>

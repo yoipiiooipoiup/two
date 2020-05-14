@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        header {
+            height: 500px;
+            background-image: url(./img/hero1.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        a.nav-link:hover {
+            border-bottom: solid 1px #f15d44 !important;
+            color: #fff;
+            transition: 0.9s;
+
+        }
+
+        .nav-link {
+            font-weight: 700 !important;
+        }
+
+        .the-nav {
+
+            padding-top: 14px;
+
+        }
+
+        .navcontent {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        .navcontent .option {
+            font-size: 22px
+        }
+
+        .navcontent span {
+            font-size: 14px;
+            color: #f15d44;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .navcontent h1 {
+            font-size: 72px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 11px;
+            margin-bottom: 18px;
+        }
+
+        .navcontent button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .navcontent p {
+            color: #ffffff;
+            margin-bottom: 44px
+        }
+
+        a.navbar-brand span {
+            color:
+        }
+
+
+        nav a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            padding-right: 20px;
+        }
+
+        .nav ul li a:hover {}
+
+        .header-center {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .header-center h3 {
+            line-height: 60px;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .map {
+            height: 612px;
+            position: relative;
+        }
+
+        .map iframe {
+            width: 100%;
+        }
+
+        .map img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-14px, -21px);
+            -ms-transform: translate(-14px, -21px);
+            transform: translate(-14px, -21px);
+        }
+        contact-info h4 {
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 47px;
+}
+.contact-info .contact-address .ca-widget {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.contact-info .contact-address .ca-widget .cw-icon {
+	height: 74px;
+	width: 74px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 74px;
+	float: left;
+	margin-right: 28px;
+}
+.contact-info .contact-address .ca-widget .cw-text {
+	padding-top: 12px;
+}
+.contact-info .contact-address .ca-widget .cw-text h5 {
+	color: #bdbdbd;
+	margin-bottom: 5px;
+}
+.contact-info .contact-address .ca-widget .cw-text p {
+	margin-bottom: 0;
+	color: #111111;
+	font-size: 18px;
+}
+.contact-form h4 {
+	font-weight: 600;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 47px;
+}
+.contact-form form input {
+	width: 100%;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	padding-left: 20px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.contact-form form input::-webkit-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::-moz-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input:-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input::placeholder {
+	color: #9a9a9a;
+}
+.contact-form form input:focus {
+	color: #111111;
+}
+.contact-form form textarea {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #e1e1e1;
+	padding-left: 20px;
+	font-size: 16px;
+	padding-top: 10px;
+	margin-bottom: 42px;
+	resize: none;
+}
+.contact-form form textarea::-webkit-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::-moz-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea:-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::-ms-input-placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea::placeholder {
+	color: #9a9a9a;
+}
+.contact-form form textarea:focus {
+	color: #111111;
+}
+.contact-form form button {
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 33px;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+	background: -o-linear-gradient(left, #eb3c5a, #f67831);
+	background: linear-gradient(to right, #eb3c5a, #f67831);
+	border: none;
+	text-transform: uppercase;
+}
+        .contact-section {
+            padding-top: 70px;
+            padding-bottom: 90px
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  ">
+                <a class="navbar-brand" href="#"><img src="./img/logo1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color:#fff"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse the-nav" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-classes.html">Classes <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gut-gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-user-plus" style="
+    padding-top: 14px;
+"></i>Register</a> </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <hr>
+
+
+
+            <div class="navcontent">
+
+                <h1>BLOG</h1>
+                <div class="option">
+                    <a>
+
+                        <i class="fa fa-home"></i>
+                        Home >
+                    </a>
+                    <span>Blog</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24112.92132811736!2d-74.20651812810036!3d40.93514309648714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fda38587e887%3A0xf03207815e338a0d!2sHaledon%2C%20NJ%2007508%2C%20USA!5e0!3m2!1sen!2sbd!4v1578120776078!5m2!1sen!2sbd" height="612" style="border:0;" allowfullscreen=""></iframe>
+        <img src="./img/location.png" alt="">
+    </div>
+
+
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>Contacts Us</h4>
+                        <div class="contact-address">
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="./img/icon-1%20(2).png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Our Location</h5>
+                                    <p>60-49 Road 11378 New York</p>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="./img/icon-2%20(2).png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Phone:</h5>
+                                    <p>+65 11.188.888</p>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="./img/icon-3%20(2).png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Mail</h5>
+                                    <p>hellocolorlib@ gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h4>Leave A Comment</h4>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Your name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Your email">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea placeholder="Your messages"></textarea>
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

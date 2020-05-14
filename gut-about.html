@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        header {
+            height: 500px;
+            background-image: url(./img/hero1.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        a.nav-link:hover {
+            border-bottom: solid 1px #f15d44 !important;
+            color: #fff;
+            transition: 0.9s;
+
+        }
+
+        .nav-link {
+            font-weight: 700 !important;
+        }
+
+        .the-nav {
+
+            padding-top: 14px;
+
+        }
+
+        .navcontent {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        .navcontent .option {
+            font-size: 22px
+        }
+
+        .navcontent span {
+            font-size: 14px;
+            color: #f15d44;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .navcontent h1 {
+            font-size: 72px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 11px;
+            margin-bottom: 18px;
+        }
+
+        .navcontent button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .navcontent p {
+            color: #ffffff;
+            margin-bottom: 44px
+        }
+
+        a.navbar-brand span {
+            color:
+        }
+
+
+        nav a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            padding-right: 20px;
+        }
+
+        .nav ul li a:hover {}
+
+        .header-center {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .header-center h3 {
+            line-height: 60px;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .story {
+            padding-top: 65px
+        }
+
+        .story-about {
+            padding-left: 65px;
+        }
+
+        .story-about h1 {
+            padding-bottom: 20px
+        }
+
+        .story-about button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 200px;
+            height: 42px;
+            border: none;
+            color: white;
+            margin-top: 28px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        about-pic {
+            position: ;
+        }
+
+        .about-pic img {
+            width: 100%;
+        }
+
+        .about-pic .play-btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-41.5px, -41.5px);
+            -ms-transform: translate(-41.5px, -41.5px);
+            transform: translate(-41.5px, -41.5px);
+        }
+
+        .about-counter .ac-item {
+            float: left;
+            margin-right: 48px;
+            position: relative;
+        }
+
+        .about-counter {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+        }
+
+        .about-counter .ac-item:after {
+            position: absolute;
+            right: -20px;
+            top: 8px;
+            height: 65px;
+            width: 1px;
+            background: #fff;
+            content: "";
+        }
+
+        .about-counter .ac-item:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .about-counter .ac-item:last-child:after {
+            display: none;
+        }
+
+        .about-counter .ac-item h2 {
+            color: #fff;
+            font-size: 72px;
+            margin-bottom: 10px;
+        }
+
+        .about-counter .ac-item p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            color: #fff
+        }
+
+        .count-count {
+            padding-top: 50px;
+        }
+
+        .award {
+            padding-top: 75px;
+        }
+
+        .award h2 {
+            font-size: 37px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        .award p {
+            font-size: 16px;
+            font-family: poppins, sans-serif;
+            color: #6b6b6b;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 15px;
+
+        }
+
+        .banner-text {
+            padding-top: 195px;
+        }
+
+        .banner-text h1 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .banner-text p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        .banner-text button {
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+            width: 166px;
+            height: 42px;
+            border: none;
+            color: white;
+            margin-top: 28px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        
+        .social a i{padding-right: 15px;
+            color: #000 !important;
+            text-align: center;
+            font-size: 27px
+        }
+        
+        .social {
+            padding-top: 15px
+        }
+         .social a{
+            
+            font-size: 16px;
+    color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background: #303030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+             background: none;
+        }
+        .social2 a i{padding-right: 15px;
+            color: #fff !important;
+            text-align: center;
+            font-size: 27px
+        }
+             .featured {
+	padding-top: 80px;
+	padding-bottom: 40px;
+               background: #222;
+    padding-bottom: 80px;
+}
+
+.featured__controls {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.featured__controls ul li {
+	list-style: none;
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	margin-right: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+.featured__controls ul li.active:after {
+	opacity: 1;
+}
+
+.featured__controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #e32879;
+	content: "";
+	opacity: 0;
+}
+
+.featured__controls ul li:last-child {
+	margin-right: 0;
+}
+
+.featured__item {
+	margin-bottom: 50px;
+}
+
+.featured__item:hover .featured__item__pic .featured__item__pic__hover {
+	bottom: 20px;
+}
+
+.featured__item__pic {
+	height: 359px;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+}
+
+.featured__item__pic__hover {
+position: absolute;
+    left: 22px;
+    padding-right: 26px;
+    text-align: center;
+    margin-left: 18px;
+    bottom: -235px;
+    width: 84%;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.15);
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -ms-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+    border-radius: 10px
+}
+
+.featured__item__pic__hover li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.featured__item__pic__hover li:last-child {
+	margin-right: 0;
+}
+
+.featured__item__pic__hover li:hover a {
+	background: #e32879;
+	border-color: #e32879;
+}
+
+.featured__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
+.featured__item__pic__hover li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	background: #ffffff;
+	display: block;
+	border-radius: 50%;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.featured__item__text {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.featured__item__text h6 {
+	margin-bottom: 10px;
+}
+
+.featured__item__text h6 a {
+	color: #fff;
+}
+
+.featured__item__text h5 {
+	color: #fff;
+	font-weight: 700;
+}
+        .section-title{
+            text-align: center;
+            color: #fff
+        }
+        .featured {
+            background: #222;
+    padding-bottom: 80px;
+        }
+        
+         footer{
+            background-color: #1e1e1e
+        }
+        footer ul li{
+            list-style: none;
+            color:#ada8a8
+        }
+        footer h2{
+            padding-bottom: 15px;
+            color: #f15d44;
+
+        }
+        footer button{
+            background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+    width: 82px;
+    height: 30px;
+    border: none;
+    color: white;
+    margin-top: 28px;
+    font-size: 17px;
+    font-weight: 400;
+        }
+        .copyright-text{
+            text-align: center;
+            padding-top: 15px;
+            color: #ada8a8;
+            padding-bottom: 20px
+        }
+        .social2 {
+            padding-top: 15px
+        }
+         .social2 a{
+            
+            font-size: 16px;
+    color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background: #303030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 3px;
+             background: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  ">
+                <a class="navbar-brand" href="#"><img src="./img/logo1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff"></i> </span>
+                </button>
+
+                <div class="collapse navbar-collapse the-nav" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-classes.html">Classes <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./gut-blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gut-gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./gut-contact.html" tabindex="-1" aria-disabled="true">Contacts</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-user-plus" style="
+    padding-top: 14px;
+"></i>Register</a> </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <hr>
+
+
+
+            <div class="navcontent">
+
+                <h1>ABOUT</h1>
+                <div class="option">
+                    <a>
+
+                        <i class="fa fa-home"></i>
+                        Home >
+                    </a>
+                    <span>About</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="container">
+        <div class=" story">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="about-pic">
+                        <img src="./img/about-pic.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                            <img src="./img/play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 story-about">
+                    <h1> STORY ABOUT US</h1>
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                        rhoncus, gravida quam semper libero sit amet.</p> <img src="./img/about-signature.png">
+                    <h6 style="padding-top: 9px">Lettie Chavez</h6>
+                    <span style="color:#f15d44 ">Ceo-Founder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="count-count">
+        <div class="container">
+            <div class="about-counter row">
+                <div class="ac-item col-sm">
+                    <h2 class="ab-count">98</h2>
+                    <p>PROGRAMS</p>
+                </div>
+                <div class="ac-item col-sm">
+                    <h2 class="ab-count">14</h2>
+                    <p>LOCATION</p>
+                </div>
+                <div class="ac-item col-sm">
+                    <h2 class="ab-count">50</h2>
+                    <p>MEMBERS</p>
+                </div>
+                <div class="ac-item col-sm">
+                    <h2 class="ab-count">43</h2>
+                    <p>COUCHES</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="award">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Best gym award</h2>
+                    <p>Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium sollicitudin,
+                        nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate cursus a
+                        amet.</p>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida quam semper libero
+                        sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida quam
+                        semper libero sit amet.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./img/award.jpg" alt="award">
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section style="background-image: url(./img/banner-bg.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;margin-top: 65px">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-7">
+                    <div class="banner-text">
+                        <h1>GET TRAINING TODAY</h1>
+                        <p>Gimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry’s standard.</p> <button>Contact Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-5"> <img src="./img/banner-person.png" style="max-width: 100%;
+
+    vertical-align: middle;
+    border-style: none;
+"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section style="background: #f5f5f5;padding-top: 50px;padding-bottom: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/trainer-3.jpg" style="background-image: url(./img/trainer-3.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                            <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                <div class="social">
+                                    <a><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/trainer-2.jpg" style="background-image: url(./img/trainer-2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                            <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                <div class="social">
+                                    <a><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="./img/trainer-1.jpg" style="background-image: url(./img/trainer-1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center">
+                            <ul class="featured__item__pic__hover">
+                                <h1>yousif </h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                <div class="social">
+                                    <a><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    
+    
+    
+    
+    
+     <footer>
+    
+    <div class="container">
+        
+        
+        <div class="row" style="padding-top: 45px">
+        
+        
+        <div class="col-sm-3"> <h2>Contact</h2>  <ul>
+            <li> Street 2020 Human Drive</li>
+            <li> City Cairo</li>
+            <li> State ElZamalek</li>
+            <li> Zip Code:21201</li>
+            <li> Phone Number:3737-475-7475</li>
+            <li> Mobile Number:440-35345-26356</li>
+            </ul></div>
+       <div class="col-sm-3"> <h2>MENU</h2> <ul>
+           <li>Home</li>
+            <li> Book</li>
+            <li> About</li>
+            <li> Courses</li>
+            <li> Our Blog</li>
+            <li> Pricing</li>
+           
+           </ul></div>
+        
+        <div class="col-sm-3"><h2>Recent Posts</h2>
+            <ul>
+            <li>Breaking Down Barries</li>
+                <li> A World of Opportunites</li>
+                <li> A Celebrates</li>
+            </ul>
+            </div>
+        
+        <div class="col-sm-3">
+            <h2>NEWSLETTERS</h2>
+            <input type="text" placeholder=" Your Email Address"> <button>Sign Up</button>
+            <div class="social2">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        
+        
+        </div>
+        <hr>
+        <div class="copyright-text"><p>
+Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script>2020 All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Joo</a>
+</p></div>
+        
+        </div>
+    
+    
+    
+    
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        'use strict';
+
+        (function($) {
+
+            /*------------------
+                Preloader
+            --------------------*/
+            $(window).on('load', function() {
+                $(".loader").fadeOut();
+                $("#preloder").delay(200).fadeOut("slow");
+
+                /*------------------
+                    Gallery filter
+                --------------------*/
+                $('.gallery-controls li').on('click', function() {
+                    $('.gallery-controls li').removeClass('active');
+                    $(this).addClass('active');
+                });
+                if ($('.gallery-filter').length > 0) {
+                    var containerEl = document.querySelector('.gallery-filter');
+                    var mixer = mixitup(containerEl);
+                }
+
+            });
+
+            /*------------------
+                Background Set
+            --------------------*/
+            $('.set-bg').each(function() {
+                var bg = $(this).data('setbg');
+                $(this).css('background-image', 'url(' + bg + ')');
+            });
+
+            /*------------------
+		Navigation
+	--------------------*/
+
+            /*------------------------
+		Testimonial Slider
+    ----------------------- */
+
+            /*------------------
+                Magnific Popup
+            --------------------*/
+
+
+            /*------------------
+                Counter Up
+            --------------------*/
+            $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+            /*------------------
+                About Counter Up
+            --------------------*/
+            $('.ab-count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+        })(jQuery);
+
+    </script>
+</body>
+
+</html>
